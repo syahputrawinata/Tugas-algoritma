@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //nomor 1 mencari nilai trbesar
+        let bil1 = 100;
+        let bil2 = 300;
+        let bil3 = 150;
+
+        if(bil1>bil2 && bil1>bil3) {
+            console.log(bil1)
+        } else if(bil2>bil1 && bil2>bil3) {
+            console.log(bil2)
+        } else if(bil3>bil1 && bil3>bil2) {
+            console.log(bil3)
+        } else if(bil1==bil2 &&  bil1==bil3) {
+            console.log("semua bilangan sama");
+        }
+
+
+        //nomor 3 saklar on/off
+        let saklar = 0;
+
+        if(saklar == 1) {
+            console.log("ON")
+        }else if(saklar == 0) {
+            console.log("OFF")
+        } else {
+            console.log("Masukan angka 1 atau 0")
+        }
+
+
+        //nomor 2 ganjil genap negatif positif
+        let bilangan = -120;
+
+        if(bilangan % 2 == 0) {
+            console.log("genap")
+        }else {
+            console.log("Ganjil")
+        }
+        if(bilangan < 0) {
+            console.log("negatif")
+        }else {
+            console.log("positif")
+        }
+
+        //nomor 4 diskon
+        let sultan = 2000;
+        let puput = 500000;
+        let abyan = 50000;
+        let total = (sultan + puput + abyan);
+        let diskon = (10 / 100 * total);
+        
+        if (total > 100000) {
+            console.log(total - diskon  )
+        }else if(total < 100000) {
+            console.log(total)
+        }
+
+        //no 5 jam kerja
+        let jam = 10;
+
+        if(jam < 6 ) {
+            console.log("Rp. 100.0000.00")
+        }else if(jam == 6){
+            console.log("Rp. 200.000.00")
+        }else if(jam > 6) {
+            console.log("Rp. 300.000.00")
+        }
+
+        //no 6 tinggi air
+        let tinggi = 620;
+
+        if(tinggi <= 500.0) {
+            console.log("AMAN")
+        }else if(tinggi >= 500.1 && tinggi <= 600.0) {
+            console.log("WASPADA")
+        }else if(tinggi >= 600.1 && tinggi <= 650.0) {
+            console.log("SIAGA 2")
+        }else if(tinggi > 650) {
+            console.log("SIAGA 1")
+        }
+    </script>
+</body>
+</html>
