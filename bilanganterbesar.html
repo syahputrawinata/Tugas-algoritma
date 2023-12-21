@@ -79,11 +79,30 @@
         if(tinggi <= 500.0) {
             console.log("AMAN")
         }else if(tinggi >= 500.1 && tinggi <= 600.0) {
-            console.log("WASPADA")
+            console.log("WASPADA")5
         }else if(tinggi >= 600.1 && tinggi <= 650.0) {
             console.log("SIAGA 2")
         }else if(tinggi > 650) {
             console.log("SIAGA 1")
+        }
+
+        //penerimaan siswa baru
+        let jalur = "rapot";
+        let nilaiun = 90;
+        let tesmandiri = 90;
+
+        if(nilaiun >= 90 && nilaiun <= 100) {
+            console.log("NILAI SEMPURNA DAN LOLOS")
+        }else if(nilaiun >=80 && nilaiun <= 89) {
+            if(jalur=="prestasi") {
+                console.log("JALUR PRESTASI")
+            }else if(jalur=="rapot") {
+                console.log("JALUR RAPOT")
+            }
+        }else if(tesmandiri >= 79 && tesmandiri <= 100) {
+            console.log("TES LOLOS")
+        }else{
+            console.log("TES GAGAL")
         }
     </script>
 </body>
